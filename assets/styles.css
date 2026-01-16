@@ -1009,3 +1009,21 @@ textarea:focus {
     padding: 24px 18px;
   }
 }
+.list.bullet {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0;
+}
+
+.list.bullet li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.list.bullet li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
